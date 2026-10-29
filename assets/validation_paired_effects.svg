@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 760" role="img" aria-label="Paired path-length improvements with bootstrap confidence intervals">
+<rect width="100%" height="100%" fill="#fcfdff"/>
+<text x="38" y="42" fill="#152c47" font-size="23" font-weight="bold" font-family="Arial">Paired Path-Length Differences · 95% Bootstrap CIs</text>
+<text x="38" y="67" fill="#60738d" font-size="13" font-family="Arial">Baseline minus candidate; positive = candidate shorter. N=6 maps per density, Holm-adjusted p-values in CSV.</text>
+<line x1="499.3" x2="499.3" y1="95" y2="710" stroke="#e4eaf2" stroke-dasharray="0"/>
+<text x="499.3" y="733" text-anchor="middle" font-size="12" font-family="Arial" fill="#52657e">-1</text>
+<line x1="547.9" x2="547.9" y1="95" y2="710" stroke="#8f9fb0" stroke-dasharray="5 4"/>
+<text x="547.9" y="733" text-anchor="middle" font-size="12" font-family="Arial" fill="#52657e">0</text>
+<line x1="645.0" x2="645.0" y1="95" y2="710" stroke="#e4eaf2" stroke-dasharray="0"/>
+<text x="645.0" y="733" text-anchor="middle" font-size="12" font-family="Arial" fill="#52657e">2</text>
+<line x1="742.1" x2="742.1" y1="95" y2="710" stroke="#e4eaf2" stroke-dasharray="0"/>
+<text x="742.1" y="733" text-anchor="middle" font-size="12" font-family="Arial" fill="#52657e">4</text>
+<line x1="839.3" x2="839.3" y1="95" y2="710" stroke="#e4eaf2" stroke-dasharray="0"/>
+<text x="839.3" y="733" text-anchor="middle" font-size="12" font-family="Arial" fill="#52657e">6</text>
+<line x1="936.4" x2="936.4" y1="95" y2="710" stroke="#e4eaf2" stroke-dasharray="0"/>
+<text x="936.4" y="733" text-anchor="middle" font-size="12" font-family="Arial" fill="#52657e">8</text>
+<text x="34" y="121" font-family="Arial" font-size="13" fill="#284059">0.2 · Plain-ACO → Q-ACO</text>
+<line x1="802.8" x2="884.5" y1="116" y2="116" stroke="#238d79" stroke-width="3"/>
+<line x1="802.8" x2="802.8" y1="109" y2="123" stroke="#238d79" stroke-width="2"/>
+<line x1="884.5" x2="884.5" y1="109" y2="123" stroke="#238d79" stroke-width="2"/>
+<circle cx="844.6" cy="116" r="5" fill="#238d79"/>
+<text x="34" y="169" font-family="Arial" font-size="13" fill="#284059">0.2 · Q-ACO → Q-ACO-Elite</text>
+<line x1="533.6" x2="562.1" y1="164" y2="164" stroke="#60738d" stroke-width="3"/>
+<line x1="533.6" x2="533.6" y1="157" y2="171" stroke="#60738d" stroke-width="2"/>
+<line x1="562.1" x2="562.1" y1="157" y2="171" stroke="#60738d" stroke-width="2"/>
+<circle cx="547.9" cy="164" r="5" fill="#60738d"/>
+<text x="34" y="217" font-family="Arial" font-size="13" fill="#284059">0.2 · Elite-NoHeuristic → Q-ACO-Elite</text>
+<line x1="555.4" x2="585.8" y1="212" y2="212" stroke="#238d79" stroke-width="3"/>
+<line x1="555.4" x2="555.4" y1="205" y2="219" stroke="#238d79" stroke-width="2"/>
+<line x1="585.8" x2="585.8" y1="205" y2="219" stroke="#238d79" stroke-width="2"/>
+<circle cx="569.6" cy="212" r="5" fill="#238d79"/>
+<text x="34" y="265" font-family="Arial" font-size="13" fill="#284059">0.2 · Elite-NoQ → Q-ACO-Elite</text>
+<line x1="795.3" x2="858.9" y1="260" y2="260" stroke="#238d79" stroke-width="3"/>
+<line x1="795.3" x2="795.3" y1="253" y2="267" stroke="#238d79" stroke-width="2"/>
+<line x1="858.9" x2="858.9" y1="253" y2="267" stroke="#238d79" stroke-width="2"/>
+<circle cx="825.7" cy="260" r="5" fill="#238d79"/>
+<line x1="30" x2="985" y1="282" y2="282" stroke="#dfe6ee"/>
+<text x="34" y="313" font-family="Arial" font-size="13" fill="#284059">0.3 · Plain-ACO → Q-ACO</text>
+<line x1="718.6" x2="795.6" y1="308" y2="308" stroke="#238d79" stroke-width="3"/>
+<line x1="718.6" x2="718.6" y1="301" y2="315" stroke="#238d79" stroke-width="2"/>
+<line x1="795.6" x2="795.6" y1="301" y2="315" stroke="#238d79" stroke-width="2"/>
+<circle cx="758.5" cy="308" r="5" fill="#238d79"/>
+<text x="34" y="361" font-family="Arial" font-size="13" fill="#284059">0.3 · Q-ACO → Q-ACO-Elite</text>
+<line x1="547.9" x2="568.0" y1="356" y2="356" stroke="#60738d" stroke-width="3"/>
+<line x1="547.9" x2="547.9" y1="349" y2="363" stroke="#60738d" stroke-width="2"/>
+<line x1="568.0" x2="568.0" y1="349" y2="363" stroke="#60738d" stroke-width="2"/>
+<circle cx="554.6" cy="356" r="5" fill="#60738d"/>
+<text x="34" y="409" font-family="Arial" font-size="13" fill="#284059">0.3 · Elite-NoHeuristic → Q-ACO-Elite</text>
+<line x1="547.9" x2="588.9" y1="404" y2="404" stroke="#60738d" stroke-width="3"/>
+<line x1="547.9" x2="547.9" y1="397" y2="411" stroke="#60738d" stroke-width="2"/>
+<line x1="588.9" x2="588.9" y1="397" y2="411" stroke="#60738d" stroke-width="2"/>
+<circle cx="566.0" cy="404" r="5" fill="#60738d"/>
+<text x="34" y="457" font-family="Arial" font-size="13" fill="#284059">0.3 · Elite-NoQ → Q-ACO-Elite</text>
+<line x1="725.3" x2="784.1" y1="452" y2="452" stroke="#238d79" stroke-width="3"/>
+<line x1="725.3" x2="725.3" y1="445" y2="459" stroke="#238d79" stroke-width="2"/>
+<line x1="784.1" x2="784.1" y1="445" y2="459" stroke="#238d79" stroke-width="2"/>
+<circle cx="755.7" cy="452" r="5" fill="#238d79"/>
+<line x1="30" x2="985" y1="474" y2="474" stroke="#dfe6ee"/>
+<text x="34" y="505" font-family="Arial" font-size="13" fill="#284059">0.4 · Plain-ACO → Q-ACO</text>
+<line x1="656.9" x2="766.0" y1="500" y2="500" stroke="#238d79" stroke-width="3"/>
+<line x1="656.9" x2="656.9" y1="493" y2="507" stroke="#238d79" stroke-width="2"/>
+<line x1="766.0" x2="766.0" y1="493" y2="507" stroke="#238d79" stroke-width="2"/>
+<circle cx="709.1" cy="500" r="5" fill="#238d79"/>
+<text x="34" y="553" font-family="Arial" font-size="13" fill="#284059">0.4 · Q-ACO → Q-ACO-Elite</text>
+<line x1="547.9" x2="547.9" y1="548" y2="548" stroke="#60738d" stroke-width="3"/>
+<line x1="547.9" x2="547.9" y1="541" y2="555" stroke="#60738d" stroke-width="2"/>
+<line x1="547.9" x2="547.9" y1="541" y2="555" stroke="#60738d" stroke-width="2"/>
+<circle cx="547.9" cy="548" r="5" fill="#60738d"/>
+<text x="34" y="601" font-family="Arial" font-size="13" fill="#284059">0.4 · Elite-NoHeuristic → Q-ACO-Elite</text>
+<line x1="547.9" x2="547.9" y1="596" y2="596" stroke="#60738d" stroke-width="3"/>
+<line x1="547.9" x2="547.9" y1="589" y2="603" stroke="#60738d" stroke-width="2"/>
+<line x1="547.9" x2="547.9" y1="589" y2="603" stroke="#60738d" stroke-width="2"/>
+<circle cx="547.9" cy="596" r="5" fill="#60738d"/>
+<text x="34" y="649" font-family="Arial" font-size="13" fill="#284059">0.4 · Elite-NoQ → Q-ACO-Elite</text>
+<line x1="638.0" x2="747.0" y1="644" y2="644" stroke="#238d79" stroke-width="3"/>
+<line x1="638.0" x2="638.0" y1="637" y2="651" stroke="#238d79" stroke-width="2"/>
+<line x1="747.0" x2="747.0" y1="637" y2="651" stroke="#238d79" stroke-width="2"/>
+<circle cx="690.1" cy="644" r="5" fill="#238d79"/>
+<text x="730" y="751" font-family="Arial" text-anchor="middle" font-size="12" fill="#536a86">Mean paired reduction in grid units</text>
+</svg>

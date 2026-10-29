@@ -1,4 +1,4 @@
-name: Release v1.0.0 evidence
+name: Publish v1.1.0 reproduction evidence
 on:
   push:
     branches: [main]
@@ -8,6 +8,7 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -15,19 +16,21 @@ jobs:
           python-version: '3.12'
       - name: Install
         run: python -m pip install -e '.[test]'
-      - name: Unit tests
+      - name: All tests
         run: python -m pytest -q
-      - name: Rebuild reproducibility evidence
+      - name: Rebuild paper-layout baseline
         run: python -m qaco_elite.experiment --output results --seed 2026 --q-episodes 1200 --ants 50 --iterations 100 --walk-cap 1800
-      - name: Zip reproducibility evidence
-        run: zip -r qaco-elite-v1.0.0-evidence.zip results -x '*benchmark.log'
-      - name: Publish release once
+      - name: Paired multi-map validation and ablation
+        run: python -m qaco_elite.validation --output results/validation --seeds 6 --q-episodes 450 --ants 20 --iterations 40 --walk-cap 750 --resamples 10000
+      - name: Package evidence
+        run: zip -qr qaco-elite-v1.1.0-evidence.zip results -x '*.log'
+      - name: Publish immutable versioned release
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
-          if gh release view v1.0.0 >/dev/null 2>&1; then
-            echo 'v1.0.0 already exists; not overwriting immutable version evidence.'
+          if gh release view v1.1.0 >/dev/null 2>&1; then
+            echo 'Release v1.1.0 already exists; preserved.'
           else
-            gh release create v1.0.0 qaco-elite-v1.0.0-evidence.zip --target "$GITHUB_SHA" --title 'v1.0.0 | Q-ACO-Elite reproduction baseline' --notes-file RELEASE_NOTES.md
+            gh release create v1.1.0 qaco-elite-v1.1.0-evidence.zip --target "$GITHUB_SHA" --title 'v1.1.0 | Paired validation and ablations' --notes-file RELEASE_NOTES.md
           fi

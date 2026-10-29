@@ -1,0 +1,92 @@
+{
+  "protocol": "independent paired random maps, not the authors original maps",
+  "base_seed": 20261030,
+  "map_count": 18,
+  "seeds_per_density": 6,
+  "densities": [
+    0.2,
+    0.3,
+    0.4
+  ],
+  "q_learning": {
+    "episodes": 450,
+    "max_steps": 450,
+    "learning_rate": 0.2,
+    "gamma": 0.9,
+    "heuristic_weight": 0.5,
+    "temperature_initial": 5.0,
+    "temperature_min": 0.01,
+    "temperature_decay": 0.01
+  },
+  "aco": {
+    "ants": 20,
+    "iterations": 40,
+    "pheromone_alpha": 1.0,
+    "distance_beta": 5.0,
+    "q_exponent": 2.0,
+    "evaporation": 0.2,
+    "elite_weight": 5.0,
+    "initial_pheromone": 1.0,
+    "deposit_strength": 1.0,
+    "max_walk_steps": 750
+  },
+  "bootstraps_and_signflips": 10000,
+  "paper_reference": {
+    "0.2": {
+      "Plain-ACO": [
+        36.83,
+        72,
+        37
+      ],
+      "Q-ACO": [
+        30.97,
+        14,
+        15
+      ],
+      "Q-ACO-Elite": [
+        30.97,
+        11,
+        15
+      ]
+    },
+    "0.3": {
+      "Plain-ACO": [
+        37.41,
+        57,
+        38
+      ],
+      "Q-ACO": [
+        32.73,
+        12,
+        14
+      ],
+      "Q-ACO-Elite": [
+        32.73,
+        8,
+        14
+      ]
+    },
+    "0.4": {
+      "Plain-ACO": [
+        58.83,
+        100,
+        62
+      ],
+      "Q-ACO": [
+        44.83,
+        37,
+        32
+      ],
+      "Q-ACO-Elite": [
+        44.24,
+        19,
+        28
+      ]
+    }
+  },
+  "implementations": {
+    "Elite-NoHeuristic": "Q-ACO-Elite with lambda=0",
+    "Elite-NoQ": "Elite ACO with uniform transition prior"
+  },
+  "observations": "Path length is primary. Paired 95% bootstrap intervals; Holm corrected sign-flip tests over four path-length comparisons per density. Exploratory, conditional on map generator and chosen hyperparameters."
+}

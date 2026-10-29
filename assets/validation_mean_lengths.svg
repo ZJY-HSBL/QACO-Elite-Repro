@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 930 480" role="img" aria-label="Repeated random-map mean path lengths">
+<rect width="100%" height="100%" fill="#fcfdff"/>
+<text x="42" y="44" fill="#182b42" font-size="23" font-family="Arial" font-weight="bold">Mean Path Length · Independent 6-Seed Validation</text>
+<text x="42" y="70" fill="#657489" font-size="13" font-family="Arial">Paired 20×20 random maps; lower is better. Not the authors’ maps.</text>
+<line x1="85" x2="890" y1="390.0" y2="390.0" stroke="#e2e9f0"/>
+<text x="68" y="395.0" text-anchor="end" fill="#546477" font-size="12" font-family="Arial">0</text>
+<line x1="85" x2="890" y1="335.0" y2="335.0" stroke="#e2e9f0"/>
+<text x="68" y="340.0" text-anchor="end" fill="#546477" font-size="12" font-family="Arial">10</text>
+<line x1="85" x2="890" y1="280.0" y2="280.0" stroke="#e2e9f0"/>
+<text x="68" y="285.0" text-anchor="end" fill="#546477" font-size="12" font-family="Arial">20</text>
+<line x1="85" x2="890" y1="225.0" y2="225.0" stroke="#e2e9f0"/>
+<text x="68" y="230.0" text-anchor="end" fill="#546477" font-size="12" font-family="Arial">30</text>
+<line x1="85" x2="890" y1="170.0" y2="170.0" stroke="#e2e9f0"/>
+<text x="68" y="175.0" text-anchor="end" fill="#546477" font-size="12" font-family="Arial">40</text>
+<line x1="85" x2="890" y1="115.0" y2="115.0" stroke="#e2e9f0"/>
+<text x="68" y="120.0" text-anchor="end" fill="#546477" font-size="12" font-family="Arial">50</text>
+<rect x="142" y="181.00" width="46" height="209.00" rx="4" fill="#d97845"/>
+<text x="165" y="173.0" font-size="12" font-family="Arial" text-anchor="middle" fill="#283648">38.00</text>
+<rect x="197" y="214.61" width="46" height="175.39" rx="4" fill="#387daf"/>
+<text x="220" y="206.6" font-size="12" font-family="Arial" text-anchor="middle" fill="#283648">31.89</text>
+<rect x="252" y="214.61" width="46" height="175.39" rx="4" fill="#238d79"/>
+<text x="275" y="206.6" font-size="12" font-family="Arial" text-anchor="middle" fill="#283648">31.89</text>
+<text x="220" y="420" text-anchor="middle" font-family="Arial" fill="#253951">Density 0.2</text>
+<rect x="412" y="169.24" width="46" height="220.76" rx="4" fill="#d97845"/>
+<text x="435" y="161.2" font-size="12" font-family="Arial" text-anchor="middle" fill="#283648">40.14</text>
+<rect x="467" y="193.09" width="46" height="196.91" rx="4" fill="#387daf"/>
+<text x="490" y="185.1" font-size="12" font-family="Arial" text-anchor="middle" fill="#283648">35.80</text>
+<rect x="522" y="193.85" width="46" height="196.15" rx="4" fill="#238d79"/>
+<text x="545" y="185.8" font-size="12" font-family="Arial" text-anchor="middle" fill="#283648">35.66</text>
+<text x="490" y="420" text-anchor="middle" font-family="Arial" fill="#253951">Density 0.3</text>
+<rect x="682" y="163.20" width="46" height="226.80" rx="4" fill="#d97845"/>
+<text x="705" y="155.2" font-size="12" font-family="Arial" text-anchor="middle" fill="#283648">41.24</text>
+<rect x="737" y="181.46" width="46" height="208.54" rx="4" fill="#387daf"/>
+<text x="760" y="173.5" font-size="12" font-family="Arial" text-anchor="middle" fill="#283648">37.92</text>
+<rect x="792" y="181.46" width="46" height="208.54" rx="4" fill="#238d79"/>
+<text x="815" y="173.5" font-size="12" font-family="Arial" text-anchor="middle" fill="#283648">37.92</text>
+<text x="760" y="420" text-anchor="middle" font-family="Arial" fill="#253951">Density 0.4</text>
+<rect x="200" y="446" width="14" height="14" fill="#d97845" rx="2"/>
+<text x="223" y="458" font-size="13" font-family="Arial" fill="#42516a">Plain-ACO</text>
+<rect x="430" y="446" width="14" height="14" fill="#387daf" rx="2"/>
+<text x="453" y="458" font-size="13" font-family="Arial" fill="#42516a">Q-ACO</text>
+<rect x="660" y="446" width="14" height="14" fill="#238d79" rx="2"/>
+<text x="683" y="458" font-size="13" font-family="Arial" fill="#42516a">Q-ACO-Elite</text>
+</svg>

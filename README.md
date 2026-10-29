@@ -77,13 +77,38 @@ python scripts/render_svg_results.py
 
 论文没有提供原始地图文件、随机种子、Q-learning 训练回合数、初始信息素具体值、Q 值非负映射和死锁回退流程，因此当前属于**算法结构与实验设置复现**，而非论文原结果的逐点精确复现。下一阶段建议做多地图 × 多随机种子重复实验、消融研究、置信区间和与 Dijkstra 最优路径的差距分析。
 
+### v1.1.0：重复实验与消融验证（独立实验）
+
+在已有论文框架单地图复现之外，本版使用 **3 档障碍物密度 × 每档 6 张独立连通随机地图 = 18 张地图**，每地图执行 5 种算法/消融，总计 **90 次 ACO 优化任务**。这组统计实验采用 **20 只蚂蚁、40 次蚁群迭代、450 次 Q 学习回合**，属于计算预算受控的**新增诊断实验**；与原论文及上方单地图基准的 **50 只蚂蚁、100 次蚁群迭代** 不得混为一谈。
+
+| 障碍概率 | Plain-ACO 均值 | Q-ACO 均值 | Q-ACO-Elite 均值 |
+|---|---:|---:|---:|
+| 0.2 | 38.00 | 31.89 | 31.89 |
+| 0.3 | 40.14 | 35.80 | 35.66 |
+| 0.4 | 41.24 | 37.92 | 37.92 |
+
+全部数值为 6 张地图的最短路径长度均值（越小越好），**不是论文表 1–3 的原始数值**。在这批地图中 Q 值引导通常改善搜索，但 **Q-ACO-Elite 相对 Q-ACO 的额外收益非常有限**。按每档密度四项路径长度对比进行 Holm 多重校正后，**没有任何比较达到 0.05 显著性阈值**；六张地图的统计功效有限，不能据此断言该算法无效或已证实优越性。
+
+![Repeated-run path-length means](assets/validation_mean_lengths.svg)
+
+![Paired effects and bootstrap intervals](assets/validation_paired_effects.svg)
+
+单独比较移除启发项（`Elite-NoHeuristic`）与移除 Q 引导（`Elite-NoQ`）的消融结果，详见 [多地图验证实验协议](docs/validation_protocol.md) 与 `results/validation/` 下的原始数据。每组保存地图种子及哈希、Q 随机种子、ACO 随机种子、最短路径长度、与 Dijkstra 的差距、收敛轮次、转角代价、在线/离线时间及配对统计。此版本包含 13 项自动化测试。
+
+```bash
+python -m qaco_elite.validation --output results/validation --seeds 6 --q-episodes 450 --ants 20 --iterations 40 --walk-cap 750 --resamples 10000
+python scripts/render_validation_svg.py
+```
+
+上述原始实验文件随 [v1.1.0 Release](https://github.com/ZJY-HSBL/QACO-Elite-Repro/releases/tag/v1.1.0) 的证据附件一并发布，源码和 SVG 图表进入仓库；请优先阅读复现边界，不能将新随机地图实验称作与原文图 4–9 的完全数值一致复现。
+
 ## English
 
 A transparent Python reproduction of **Q-ACO-Elite**, comparing Plain ACO, Q-guided ACO, and Q-guided ACO with global-best elite pheromone reinforcement on 20×20 obstacle grids. The project uses legal eight-neighbour transitions without corner cutting and reports path length, first-best iteration, and turning cost.
 
 **How to run:** install with `pip install -e '.[test]'`, check with `pytest -q`, then execute the benchmark command shown above. Read `docs/reproduction_notes.md` for the assumptions where the paper is underspecified.
 
-**Important:** The numerical results and maps provided here are **new independent simulations**, not the original authors' unreleased datasets or seeds. In the initial one-seed comparison the Q-guided methods found shorter paths than Plain-ACO, but elite reinforcement did not consistently improve the final path. No statistical superiority claim is made from this trial.
+**Important:** The numerical results and maps provided here are **new independent simulations**, not the original authors' unreleased datasets or seeds. In the initial one-seed comparison the Q-guided methods found shorter paths than Plain-ACO, but elite reinforcement did not consistently improve the final path. No statistical superiority claim is made from this trial. Version **v1.1.0** adds 18 independently sampled paired maps (six per obstacle density), 90 total ACO runs, Q-prior and reward-heuristic ablations, paired bootstrap intervals and Holm-adjusted exploratory tests. The statistical run uses 20 ants × 40 iterations, distinct from the article-parameter demonstration (50 × 100). None of the four length comparisons per density clears the adjusted 0.05 threshold (N=6), so no statistical superiority claim is warranted. See `docs/validation_protocol.md` and the v1.1.0 evidence release.
 
 ## License
 

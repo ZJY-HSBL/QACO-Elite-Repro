@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qaco-elite-repro"
-version = "1.0.0"
+version = "1.1.0"
 description = "Reproduction of Q-learning guided ant colony optimization with elite pheromone reinforcement for AGV path planning"
 readme = "README.md"
 requires-python = ">=3.10"
