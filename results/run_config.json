@@ -1,0 +1,55 @@
+{
+  "seed": 2026,
+  "size": 20,
+  "q_learning": {
+    "episodes": 1200,
+    "max_steps": 450,
+    "learning_rate": 0.2,
+    "gamma": 0.9,
+    "heuristic_weight": 0.5,
+    "temperature_initial": 5.0,
+    "temperature_min": 0.01,
+    "temperature_decay": 0.01
+  },
+  "aco": {
+    "ants": 50,
+    "iterations": 100,
+    "pheromone_alpha": 1.0,
+    "distance_beta": 5.0,
+    "q_exponent": 2.0,
+    "evaporation": 0.2,
+    "elite_weight": 5.0,
+    "initial_pheromone": 1.0,
+    "deposit_strength": 1.0,
+    "max_walk_steps": 1800
+  },
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "maps": {
+    "0.2": {
+      "seed": 2026,
+      "samples_until_connected": 1,
+      "actual_obstacle_fraction": 0.17,
+      "dijkstra_optimum": 30.384776310850242,
+      "q_episodes_completed": 1045
+    },
+    "0.3": {
+      "seed": 2126,
+      "samples_until_connected": 1,
+      "actual_obstacle_fraction": 0.3,
+      "dijkstra_optimum": 33.899494936611674,
+      "q_episodes_completed": 1032
+    },
+    "0.4": {
+      "seed": 2226,
+      "samples_until_connected": 10,
+      "actual_obstacle_fraction": 0.365,
+      "dijkstra_optimum": 48.242640687119284,
+      "q_episodes_completed": 958
+    }
+  },
+  "note": "New seeded maps, not the original unpublished maps; all comparisons within each map are paired."
+}

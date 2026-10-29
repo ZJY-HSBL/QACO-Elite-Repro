@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img">
+<rect width="960" height="360" fill="#f7f9fc"/>
+<text x="22" y="37" fill="#193650" font-size="21" font-family="Arial,sans-serif" font-weight="700">Independent AGV benchmark | path length (lower is better)</text>
+<text x="106" y="70" fill="#193650" font-size="15" font-family="Arial,sans-serif" font-weight="700">obstacle p=0.2</text>
+<rect x="75" y="133.9" width="48" height="160.1" fill="#e8793a" rx="2"/>
+<text x="79" y="125.8671659632" fill="#193650" font-size="12" font-family="Arial,sans-serif" font-weight="400">37.41</text>
+<rect x="142" y="164.0" width="48" height="130.0" fill="#3178a5" rx="2"/>
+<text x="146" y="155.9531573932" fill="#193650" font-size="12" font-family="Arial,sans-serif" font-weight="400">30.38</text>
+<rect x="209" y="164.0" width="48" height="130.0" fill="#27926d" rx="2"/>
+<text x="213" y="155.9531573932" fill="#193650" font-size="12" font-family="Arial,sans-serif" font-weight="400">30.38</text>
+<path d="M70 294H302" stroke="#9cabb9"/>
+<text x="416" y="70" fill="#193650" font-size="15" font-family="Arial,sans-serif" font-weight="700">obstacle p=0.3</text>
+<rect x="385" y="131.4" width="48" height="162.6" fill="#e8793a" rx="2"/>
+<text x="389" y="123.35999999999999" fill="#193650" font-size="12" font-family="Arial,sans-serif" font-weight="400">38.00</text>
+<rect x="452" y="148.9" width="48" height="145.1" fill="#3178a5" rx="2"/>
+<text x="456" y="140.91016165680003" fill="#193650" font-size="12" font-family="Arial,sans-serif" font-weight="400">33.90</text>
+<rect x="519" y="148.9" width="48" height="145.1" fill="#27926d" rx="2"/>
+<text x="523" y="140.91016165680003" fill="#193650" font-size="12" font-family="Arial,sans-serif" font-weight="400">33.90</text>
+<path d="M380 294H612" stroke="#9cabb9"/>
+<text x="726" y="70" fill="#193650" font-size="15" font-family="Arial,sans-serif" font-weight="700">obstacle p=0.4</text>
+<rect x="695" y="80.0" width="48" height="214.0" fill="#e8793a" rx="2"/>
+<text x="699" y="72.0" fill="#193650" font-size="12" font-family="Arial,sans-serif" font-weight="400">50.00</text>
+<rect x="762" y="87.5" width="48" height="206.5" fill="#3178a5" rx="2"/>
+<text x="766" y="79.5214978468" fill="#193650" font-size="12" font-family="Arial,sans-serif" font-weight="400">48.24</text>
+<rect x="829" y="87.5" width="48" height="206.5" fill="#27926d" rx="2"/>
+<text x="833" y="79.5214978468" fill="#193650" font-size="12" font-family="Arial,sans-serif" font-weight="400">48.24</text>
+<path d="M690 294H922" stroke="#9cabb9"/>
+<rect x="90" y="328" width="15" height="8" fill="#e8793a"/>
+<text x="111" y="338" fill="#193650" font-size="13" font-family="Arial,sans-serif" font-weight="400">Plain-ACO</text>
+<rect x="365" y="328" width="15" height="8" fill="#3178a5"/>
+<text x="386" y="338" fill="#193650" font-size="13" font-family="Arial,sans-serif" font-weight="400">Q-ACO</text>
+<rect x="640" y="328" width="15" height="8" fill="#27926d"/>
+<text x="661" y="338" fill="#193650" font-size="13" font-family="Arial,sans-serif" font-weight="400">Q-ACO-Elite</text>
+</svg>

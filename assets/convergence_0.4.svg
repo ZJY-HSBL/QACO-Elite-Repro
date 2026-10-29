@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img">
+<rect width="960" height="360" fill="#f7f9fc"/>
+<text x="38" y="36" fill="#193650" font-size="21" font-family="Arial,sans-serif" font-weight="700">Best-so-far convergence | obstacle density 0.4</text>
+<path d="M80 65V290H925" stroke="#8a9aab" fill="none" stroke-width="1.5"/>
+<path d="M80 290H925" stroke="#d6dfe8"/>
+<text x="20" y="295.0" fill="#52687b" font-size="12" font-family="Arial,sans-serif" font-weight="400">47.2</text>
+<path d="M80 233.75H925" stroke="#d6dfe8"/>
+<text x="20" y="238.75" fill="#52687b" font-size="12" font-family="Arial,sans-serif" font-weight="400">50.1</text>
+<path d="M80 177.5H925" stroke="#d6dfe8"/>
+<text x="20" y="182.5" fill="#52687b" font-size="12" font-family="Arial,sans-serif" font-weight="400">52.9</text>
+<path d="M80 121.25H925" stroke="#d6dfe8"/>
+<text x="20" y="126.25" fill="#52687b" font-size="12" font-family="Arial,sans-serif" font-weight="400">55.8</text>
+<path d="M80 65H925" stroke="#d6dfe8"/>
+<text x="20" y="70.0" fill="#52687b" font-size="12" font-family="Arial,sans-serif" font-weight="400">58.7</text>
+<path d="M80.0 84.7 H122.7V117.4 H131.2V156.8 H139.7V196.2 H216.6V235.6 H925" stroke="#e8793a" stroke-width="2.5" fill="none"/>
+<path d="M80.0 258.7 H173.9V270.3 H925" stroke="#3178a5" stroke-width="2.5" fill="none"/>
+<path d="M80.0 258.7 H182.4V270.3 H925" stroke="#27926d" stroke-width="2.5" fill="none"/>
+<rect x="95" y="316" width="16" height="8" fill="#e8793a"/>
+<text x="116" y="326" fill="#193650" font-size="14" font-family="Arial,sans-serif" font-weight="400">Plain-ACO</text>
+<rect x="370" y="316" width="16" height="8" fill="#3178a5"/>
+<text x="391" y="326" fill="#193650" font-size="14" font-family="Arial,sans-serif" font-weight="400">Q-ACO</text>
+<rect x="645" y="316" width="16" height="8" fill="#27926d"/>
+<text x="666" y="326" fill="#193650" font-size="14" font-family="Arial,sans-serif" font-weight="400">Q-ACO-Elite</text>
+</svg>
